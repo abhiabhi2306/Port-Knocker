@@ -25,14 +25,14 @@ try:
 except ImportError:
     print(color.RED+color.BOLD+"This tool is not compatible with your version of python, please use python 3 or above")
     quit()
-print(color.GREEN+color.BOLD+"Enter your host (ex: 192.168.137.154) :")
+print(color.PURPLE+color.BOLD+"Enter your host (ex: 192.168.137.154) :")
 host = input()
-print(color.GREEN+color.BOLD+"Enter the port sequence you want to port knock seperated by a space, ex: 2331 1337 3133")
+print(color.PURPLE+color.BOLD+"Enter the port sequence you want to port knock seperated by a space, ex: 2331 1337 3133")
 p1,p2,p3 = input().split()
 os.system("nmap -Pn --host-timeout 201 --max-retries 0 -p "+ p1 + " " + host)
 os.system("nmap -Pn --host-timeout 201 --max-retries 0 -p "+ p2 + " " + host)
 os.system("nmap -Pn --host-timeout 201 --max-retries 0 -p "+ p3 + " " + host)
-print(color.BLUE+color.BOLD+"KNOCK KNOCK!! THE PORTS ARE KNOCKED - Thank you for using P3RTKN3CKER ")
+print(color.YELLOW+color.BOLD+"KNOCK KNOCK!! THE PORTS ARE KNOCKED - Thank you for using P3RTKN3CKER ")
 
 
 
